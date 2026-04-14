@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Properties</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/flex.css">
+    <script src="scripts/flex.js" defer></script>
+</head>
+
+<body>
+    <section>
+        <h1>flex direction</h1>
+        <article>
+            <div class="controls">
+                <button data-direction="row">row</button>
+                <button data-direction="row-reverse">row-reverse</button>
+                <button data-direction="column">column</button>
+                <button data-direction="column-reverse">column-reverse</button>
+            </div>
+            <div class="container container-direction">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+            </div>
+        </article>
+
+
+    </section>
+    <section>
+        <h1>
+            alignment and distribution
+        </h1>
+        <article>
+            <h2>Justify content</h2>
+            <div class="controls">
+                <button data-justify="justify-start">start</button>
+                <button data-justify="justify-center">center</button>
+                <button data-justify="justify-end">end</button>
+                <button data-justify="justify-between">between</button>
+                <button data-justify="justify-around">around</button>
+                <button data-justify="justify-evenly">evenly</button>
+            </div>
+            <div class="container container-justify">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+            </div>
+        </article>
+        <article>
+            <h2>Align Items</h2>
+            <div class="controls">
+                <button data-align="align-start">start</button>
+                <button data-align="align-center">center</button>
+                <button data-align="align-end">end</button>
+                <button data-align="align-baseline">baseline</button>
+                <button data-align="align-stretch">stretch</button>
+            </div>
+            <div class="container container-align">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+
+            </div>
+        </article>
+        <article>
+            <h2>Align Content</h2>
+            <div class="controls">
+                <button data-content="content-start">start</button>
+                <button data-content="content-center">center</button>
+                <button data-content="content-end">end</button>
+                <button data-content="content-between">between</button>
+                <button data-content="content-around">around</button>
+                <button data-content="content-stretch">stretch</button>
+            </div>
+
+            <div class="container container-content">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+                <div class="box">7</div>
+                <div class="box">8</div>
+            </div>
+        </article>
+    </section>
+    <section>
+        <h1>Flex Items</h1>
+
+        <div class="controls">
+            <h3>Grow</h3>
+            <button data-grow="0">0</button>
+            <button data-grow="1">1</button>
+            <button data-grow="2">2</button>
+
+            <h3>Shrink</h3>
+            <button data-shrink="0">0</button>
+            <button data-shrink="1">1</button>
+            <button data-shrink="2">2</button>
+
+            <h3>Basis</h3>
+            <button data-basis="50px">50px</button>
+            <button data-basis="100px">100px</button>
+            <button data-basis="auto">auto</button>
+
+            <h3>Order</h3>
+            <button data-order="0">0</button>
+            <button data-order="-1">-1</button>
+            <button data-order="1">1</button>
+            <h3>Align Self</h3>
+            <button data-self="auto">auto</button>
+            <button data-self="flex-start">start</button>
+            <button data-self="center">center</button>
+            <button data-self="flex-end">end</button>
+            <button data-self="stretch">stretch</button>
+        </div>
+
+        <div class="container container-items">
+            <div class="box active">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </section>
+    <section>
+        <h2>Flex Wrap</h2>
+        <div class="controls">
+            <button data-wrap="wrap">wrap</button>
+            <button data-wrap="nowrap">nowrap</button>
+            <button data-wrap="wrap-reverse">wrap-reverse</button>
+        </div>
+
+        <div class="container container-wrap">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Properties</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/grid.css">
+    <script src="scripts/grid.js" defer></script>
+</head>
+
+<body>
+
+    <section>
+        <h1>grid-template-columns y rows</h1>
+        <article>
+            <h2>Columns</h2>
+            <div class="controls">
+                <button data-cols="1fr 1fr 1fr">1fr 1fr 1fr</button>
+                <button data-cols="200px 1fr 1fr">200px 1fr 1fr</button>
+                <button data-cols="repeat(4, 1fr)">repeat(4, 1fr)</button>
+                <button data-cols="100px 2fr 1fr">100px 2fr 1fr</button>
+                <button data-cols="auto auto auto">auto auto auto</button>
+            </div>
+            <h2>Rows</h2>
+            <div class="controls">
+                <button data-rows="auto">auto</button>
+                <button data-rows="100px auto">100px auto</button>
+                <button data-rows="repeat(2, 80px)">repeat(2, 80px)</button>
+                <button data-rows="1fr 2fr">1fr 2fr</button>
+            </div>
+            <div class="container container-template">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <h1>gap (espaciado)</h1>
+        <article>
+            <h2>gap</h2>
+            <div class="controls">
+                <button data-gap="0px">0px</button>
+                <button data-gap="8px">8px</button>
+                <button data-gap="16px">16px</button>
+                <button data-gap="24px">24px</button>
+            </div>
+            <h2>column-gap</h2>
+            <div class="controls">
+                <button data-col-gap="0px">0px</button>
+                <button data-col-gap="8px">8px</button>
+                <button data-col-gap="24px">24px</button>
+            </div>
+            <h2>row-gap</h2>
+            <div class="controls">
+                <button data-row-gap="0px">0px</button>
+                <button data-row-gap="8px">8px</button>
+                <button data-row-gap="24px">24px</button>
+            </div>
+            <div class="container container-gap">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <h1>Posicionar elementos</h1>
+        <article>
+            <p>Haz clic en un elemento (se resalta) y luego aplica posición:</p>
+            <h2>grid-column</h2>
+            <div class="controls">
+                <button data-grid-col="1 / 2">1 / 2</button>
+                <button data-grid-col="1 / 3">1 / 3</button>
+                <button data-grid-col="2 / 4">2 / 4</button>
+                <button data-grid-col="1 / -1">1 / -1</button>
+                <button data-grid-col="span 2">span 2</button>
+                <button data-grid-col="">reset</button>
+            </div>
+            <h2>grid-row</h2>
+            <div class="controls">
+                <button data-grid-row="1 / 2">1 / 2</button>
+                <button data-grid-row="1 / 3">1 / 3</button>
+                <button data-grid-row="span 2">span 2</button>
+                <button data-grid-row="">reset</button>
+            </div>
+            <div class="container container-position">
+                <div class="box active">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <h1>repeat() con auto-fill y auto-fit</h1>
+        <article>
+            <div class="controls">
+                <button data-autofill="repeat(auto-fill, minmax(80px, 1fr))">auto-fill 80px</button>
+                <button data-autofill="repeat(auto-fit, minmax(80px, 1fr))">auto-fit 80px</button>
+                <button data-autofill="repeat(auto-fill, minmax(120px, 1fr))">auto-fill 120px</button>
+                <button data-autofill="repeat(auto-fit, minmax(150px, 1fr))">auto-fit 150px</button>
+            </div>
+            <div class="container container-autofill">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+                <div class="box">7</div>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <h1>Alineación y distribución</h1>
+        <article>
+            <h2>justify-items</h2>
+            <div class="controls">
+                <button data-justify-items="start">start</button>
+                <button data-justify-items="center">center</button>
+                <button data-justify-items="end">end</button>
+                <button data-justify-items="stretch">stretch</button>
+            </div>
+            <h2>align-items</h2>
+            <div class="controls">
+                <button data-align-items="start">start</button>
+                <button data-align-items="center">center</button>
+                <button data-align-items="end">end</button>
+                <button data-align-items="stretch">stretch</button>
+            </div>
+            <h2>justify-content</h2>
+            <div class="controls">
+                <button data-justify-content="start">start</button>
+                <button data-justify-content="center">center</button>
+                <button data-justify-content="end">end</button>
+                <button data-justify-content="space-between">space-between</button>
+                <button data-justify-content="space-around">space-around</button>
+                <button data-justify-content="space-evenly">space-evenly</button>
+            </div>
+            <h2>align-content</h2>
+            <div class="controls">
+                <button data-align-content="start">start</button>
+                <button data-align-content="center">center</button>
+                <button data-align-content="end">end</button>
+                <button data-align-content="space-between">space-between</button>
+                <button data-align-content="space-around">space-around</button>
+                <button data-align-content="stretch">stretch</button>
+            </div>
+            <div class="container container-align">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <h1>grid-template-areas</h1>
+        <article>
+            <div class="controls">
+                <button data-layout="classic">layout clásico</button>
+                <button data-layout="no-sidebar">sin sidebar</button>
+                <button data-layout="three-cols">header + 3 cols</button>
+            </div>
+            <div class="container container-areas">
+                <div class="box area-header">header</div>
+                <div class="box area-sidebar">sidebar</div>
+                <div class="box area-main">main</div>
+                <div class="box area-footer">footer</div>
+            </div>
+        </article>
+    </section>
+
+</body>
+
+</html>

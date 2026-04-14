@@ -1,0 +1,152 @@
+.container {
+    display: flex;
+    gap: 2rem;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.column-reverse {
+    flex-direction: column-reverse;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.container-justify,
+.container-align {
+    width: 100%;
+    padding: 2rem;
+    border: 1px solid red;
+}
+
+button {
+    font-size: 18px;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+.align-stretch {
+    align-items: stretch;
+}
+
+.container-align {
+    height: 500px;
+}
+
+.container-align .box, .container-content .box {
+    height: auto;
+}
+
+.container-items {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    border: 1px solid red;
+    height: 600px;
+}
+
+
+.active {
+    background: crimson;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.container-wrap {
+    display: flex;
+    width: 200px;
+    border: 1px solid red;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.content-start {
+    align-content: flex-start;
+}
+
+.content-center {
+    align-content: center;
+}
+
+.content-end {
+    align-content: flex-end;
+}
+
+.content-between {
+    align-content: space-between;
+}
+
+.content-around {
+    align-content: space-around;
+}
+
+.content-stretch {
+    align-content: stretch;
+}
+
+.container-content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    border: 1px solid red;
+    gap: 1rem;
+}
+.container-items .box{
+    min-height: 200px;
+    height: auto;
+}
